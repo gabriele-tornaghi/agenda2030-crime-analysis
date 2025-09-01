@@ -1,10 +1,9 @@
-// cambiaDati(document.getElementById("selezionaReato").value);
 let graficoProvincia=null; 
 let graficoReato=null;
 let=graficoImpattoRegione=null;
 
 
-
+// Creazione grafico
 function creaGrafico(etichette, dati, label, tipo, id, borderColor)
 {
     ctx = document.getElementById(id);
@@ -40,8 +39,7 @@ function creaGrafico(etichette, dati, label, tipo, id, borderColor)
   return grafico;
 }
   
-
-
+//Selezione dei dati
 function selezionaDati(funzione, elemento, regione)
 {
     console.log(elemento)
@@ -78,9 +76,6 @@ function cambiaDatiRegione(funzione, elemento)
   selezionaDati(funzione, elemento);
 }
 
-
-
-
 function cambiaDatiProvincia(etichetta, dati)
 {
   if(graficoProvincia!=null)
@@ -89,10 +84,6 @@ function cambiaDatiProvincia(etichetta, dati)
   }
   graficoProvincia= creaGrafico(etichette, dati, "Crimini", "bar", "graficoProvincia");
 }
-
-
-
-
 
 function cambiaDatiReato(etichette, dati)
 {
@@ -111,6 +102,3 @@ function cambiaDatiImpattoRegione(etichette, dati)
   }
   graficoImpattoRegione= creaGrafico(etichette, dati, "Crimini", "doughnut", "canvaGraficoRegioneTorta")
 }
-
-
-// console.log("caiooooo ")
