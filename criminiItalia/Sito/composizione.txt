@@ -1,6 +1,0 @@
-Vista iniziale: grafici italiani + selezione regione
-Vista regione: 
-1) grafico regione (impatto di (crimini totali) su italia) 
-2) grafico diviso per anni del totale di tutti i grimini
-3) seleziona provincia 
-4) grafico x anno (singolo reato)
